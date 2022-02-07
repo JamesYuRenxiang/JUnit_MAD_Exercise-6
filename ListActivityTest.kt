@@ -61,7 +61,7 @@ class ListActivityTest {
         launch(ListActivity::class.java)
         for (i in 0..19) {
             onView(withId(R.id.recyclerView)).perform(
-                RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(i, clickOnViewChild(R.id.userName)))
+                RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(i, clickOnViewChild(R.id.username)))
         }
     }
 
